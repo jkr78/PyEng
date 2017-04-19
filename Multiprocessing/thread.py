@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import threading
 from gen_rand import gen_random_data
 

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from __future__ import print_function
 from __future__ import division
 from __future__ import absolute_import
@@ -28,5 +27,5 @@ print("The number of faces found = ", len(faces))
 for (x,y,w,h) in faces:
     cv2.rectangle(image, (x,y), (x+h, y+h), (0, 255, 0), 2)
 
-cv2.imshow("Faces found", image)    
+cv2.imshow("Faces found", image)
 cv2.waitKey(0)

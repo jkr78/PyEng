@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 from flask import *
 import os
 import subprocess
@@ -16,7 +14,7 @@ def home(command = None):
     if command:
         p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         msg = p.communicate()[0]
-        msg = msg.split("\n")
+        msg = msg.split(b"\n")
 
     return render_template("index.html", command = command, msg = msg)
 

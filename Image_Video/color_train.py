@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from __future__ import print_function
 from __future__ import division
 from __future__ import absolute_import
@@ -14,7 +13,7 @@ def find_rgb(blobs):
     '''
     Find the RGB values in blobs of data. The fucntion loops over the blobs
     and finds the average of the rgb values
-    
+
     Input: The output of the findBlobs() function
     Output: The average rgb values are returned.
     '''
@@ -28,9 +27,9 @@ def find_rgb(blobs):
     red = red / len(blobs)
     green = green / len(blobs)
     blue = blue / len(blobs)
-    
+
     return red, green, blue
-    
+
 # Read the red and blue shirts
 red = Image("red_train.jpg")
 red2=red.crop(shirt_location)
